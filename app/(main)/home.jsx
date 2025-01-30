@@ -117,7 +117,7 @@ const HomeScreen = () => {
         {/* header */}
         <View style={styles.header}>
           <Pressable>
-            <Text style={styles.title}>LinkUp</Text>
+            <Text style={styles.title}>Crema</Text>
           </Pressable>
           <View style={styles.icons}>
             <Pressable onPress={()=> {
