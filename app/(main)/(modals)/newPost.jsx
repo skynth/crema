@@ -1,21 +1,21 @@
 import { View, Text, StyleSheet, ScrollView, Pressable, Image as RNImage, Alert, TouchableOpacity } from 'react-native'
 import React, { useCallback, useEffect, useRef, useState } from 'react'
-import ScreenWrapper from '../../components/ScreenWrapper'
-import { hp, wp } from '../../helpers/common'
-import { theme } from '../../constants/theme'
-import { useAuth } from '../../contexts/AuthContext'
-import { getFilePath, getSupabaseFileUrl, getUserImageSrc, uploadFile } from '../../services/imageService'
+import ScreenWrapper from '../../../components/ScreenWrapper'
+import { hp, wp } from '../../../helpers/common'
+import { theme } from '../../../constants/theme'
+import { useAuth } from '../../../contexts/AuthContext'
+import { getFilePath, getSupabaseFileUrl, getUserImageSrc, uploadFile } from '../../../services/imageService'
 import { Image } from 'expo-image'
-import RichTextEditor from '../../components/RichTextEditor'
-import Button from '../../components/Button'
+import RichTextEditor from '../../../components/RichTextEditor'
+import Button from '../../../components/Button'
 import { AntDesign, FontAwesome, FontAwesome6, Ionicons } from '@expo/vector-icons'
 import * as ImagePicker from 'expo-image-picker';
 import { Video, AVPlaybackStatus } from 'expo-av';
-import { createOrUpdatePost } from '../../services/postService'
-import Header from '../../components/Header'
+import { createOrUpdatePost } from '../../../services/postService'
+import Header from '../../../components/Header'
 import { useLocalSearchParams, useRouter } from 'expo-router'
-import Avatar from '../../components/Avatar'
-import Icon from '../../assets/icons'
+import Avatar from '../../../components/Avatar'
+import Icon from '../../../assets/icons'
 
 
 const NewPost = () => {

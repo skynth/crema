@@ -1,19 +1,19 @@
 import { View, Text, StyleSheet, ScrollView, TextInput, TouchableOpacity, Alert } from 'react-native'
 import React, { useEffect, useRef, useState } from 'react'
-import PostCard from '../../components/PostCard'
+import PostCard from '../../../components/PostCard'
 import { useLocalSearchParams, useRouter } from 'expo-router';
-import { useAuth } from '../../contexts/AuthContext';
-import { hp, wp } from '../../helpers/common';
-import { theme } from '../../constants/theme';
-import Icon from '../../assets/icons';
-import Loading from '../../components/Loading';
-import { createComment, fetchPostDetails, removeComment, removePost } from '../../services/postService';
-import { supabase } from '../../lib/supabase';
-import CommentItem from '../../components/CommentItem';
-import { getUserData } from '../../services/userService';
-import Button from '../../components/Button';
-import Input from '../../components/Input';
-import { createNotification } from '../../services/notificationService';
+import { useAuth } from '../../../contexts/AuthContext';
+import { hp, wp } from '../../../helpers/common';
+import { theme } from '../../../constants/theme';
+import Icon from '../../../assets/icons';
+import Loading from '../../../components/Loading';
+import { createComment, fetchPostDetails, removeComment, removePost } from '../../../services/postService';
+import { supabase } from '../../../lib/supabase';
+import CommentItem from '../../../components/CommentItem';
+import { getUserData } from '../../../services/userService';
+import Button from '../../../components/Button';
+import Input from '../../../components/Input';
+import { createNotification } from '../../../services/notificationService';
 
 const PostDetails = () => {
     const {postId, commentId} = useLocalSearchParams();

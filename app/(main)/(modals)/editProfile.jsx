@@ -1,20 +1,20 @@
 import { View, Text, StyleSheet, ScrollView, Pressable, TextInput, Alert } from 'react-native'
 import React, { useEffect, useState } from 'react'
-import { hp, wp } from '../../helpers/common'
-import { useAuth } from '../../contexts/AuthContext'
-import { theme } from '../../constants/theme'
+import { hp, wp } from '../../../helpers/common'
+import { useAuth } from '../../../contexts/AuthContext'
+import { theme } from '../../../constants/theme'
 import { Feather, FontAwesome, Ionicons, SimpleLineIcons } from '@expo/vector-icons'
 import { useRouter } from 'expo-router'
-import ScreenWrapper from '../../components/ScreenWrapper'
-import Button from '../../components/Button'
-import BackButton from '../../components/BackButton'
+import ScreenWrapper from '../../../components/ScreenWrapper'
+import Button from '../../../components/Button'
+import BackButton from '../../../components/BackButton'
 import * as ImagePicker from 'expo-image-picker';
-import { updateUser } from '../../services/userService'
-import { getFilePath, getUserImageSrc, uploadFile } from '../../services/imageService'
+import { updateUser } from '../../../services/userService'
+import { getFilePath, getUserImageSrc, uploadFile } from '../../../services/imageService'
 import { Image } from 'expo-image';
-import Header from '../../components/Header'
-import Icon from '../../assets/icons'
-import Input from '../../components/Input'
+import Header from '../../../components/Header'
+import Icon from '../../../assets/icons'
+import Input from '../../../components/Input'
 
 
 const EditProfile = () => {
